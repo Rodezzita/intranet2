@@ -1,6 +1,6 @@
 <?php 
 	$conexion = null;
-
+        $conexionSQL=null;
 	function conectar()
 	{
 		global $conexion;
@@ -8,6 +8,17 @@
 		//$conexion = mysqli_connect('localhost', 'trading', 'a1b2c3d4e5f6', 'trading_intranet');
 		mysqli_set_charset($conexion, 'utf8');
 	}
+        function conectarSQl()
+        {
+            global $conexionSQL;
+            $serverName="192.168.0.104";
+            $infoCnn=array("DataBase"=>"ICG", "UID"=>"sa","PWD"=>"Masterkey3033");
+            $conexionSQL = sqlsrv_connect($serverName,$infoCnn);
+            if($conexionSQL){
+                
+            }
+            
+        }
 
 	function getTodasCategorias()
 	{

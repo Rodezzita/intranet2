@@ -48,11 +48,8 @@
 
   		</div>
 
-  		<div class="row marketing">	
-	    <footer class="footer">
-	    	<p>&copy; By Carlos 2015</p>
-	    </footer>
-    </div> <!-- /container -->
+  	<?php include './Secciones/CodeFooter.php'?>	
+        <!-- /container -->
     </div>
   </body>
 </html>

@@ -53,8 +53,9 @@
               </tbody>
             </table>
           </div>
-
-          <a href="agregarCategoria.php" class="btn btn-primary">Nueva categoría</button>
+          
+              <a href="agregarCategoria.php" class="btn btn-primary">Nueva categoría</a>
+          
         </div>
       </div>
     </div>

@@ -36,6 +36,7 @@
           <p>Por favor seleccione una de las opciones del menú lateral izquierdo.</p>
         </div>
       </div>
+        
     </div>
 
     <!-- Bootstrap core JavaScript

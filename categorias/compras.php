@@ -24,15 +24,27 @@
     <div class="container">
 
       <div class="starter-template">
+          
         <h1>Sección de Compras</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Libro de provedores</h1>
+                
+                                <p></p>
 
+            </div>
+            <div class="col-md-6">
+                <h1>Incidencias</h1> 
+                <p></p>
+            </div>
+            
+        </div>
+      </div>
+        <?php include '../Secciones/CodeFooter.php';   ?>   
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+ 
+    <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>

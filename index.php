@@ -50,9 +50,8 @@
 
       <hr>
 
-      <footer>
-        <p>&copy; By Carlos 2015</p>
-      </footer>
+      <?php include './Secciones/CodeFooter.php';?>
+      
     </div> <!-- /container -->
 
 
