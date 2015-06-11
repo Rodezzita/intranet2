@@ -12,7 +12,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
               <li><a href="index.php">Dashboard</a></li>
-            <li><a href="">Cerrar sesión</a></li>
+              <li><a href="../scripts/cerrar-sesion.php">Cerrar sesión</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">

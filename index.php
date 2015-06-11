@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Intranet de Trading Academy">
     <meta name="author" content="Trading Academy">
+    
     <title>Intranet de Cero3Once</title>
 
+    <link rel="stylesheet" href="css/codeTitles.css"
     <!-- Bootstrap core CSS -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   </head>
 
@@ -25,36 +28,31 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Leer más &raquo;</a></p>
       </div>
     </div>
-
     <div class="container">
       <!-- Example row of columns -->
+          <h1>Sucursales</h1>
       <div class="row">
-        <div class="col-md-4">
-          <h2>Breafing</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Ir.. &raquo;</a></p>
+          
+        <div class="col-md-6">
+          <h1>La Curva de San Pedro</h1>
+           <p>Informe de incidencias diarias.</p>
+            <p>Informe de incidencias diarias.</p>
         </div>
-        <div class="col-md-4">
-          <h2>Reporte Diario</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Ir.. &raquo;</a></p>
+        <div class="col-md-6">
+          <h1>Reporte Diario</h1>
+          <p>Informe de incidencias diarias.</p>
+          
        </div>
-        <div class="col-md-4">
-          <h2>Comunicados</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">Ir.. &raquo;</a></p>
-        </div>
+        
       </div>
-
-      <hr>
 
       <?php include './Secciones/CodeFooter.php';?>
       
     </div> <!-- /container -->
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
   </body>
 </html>
 

@@ -1,4 +1,4 @@
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-sm-3 col-md-2 ">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="index.php">Inicio</a></li>
             <li><a href="permisos.php">Permisos</a></li>
