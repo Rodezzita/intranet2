@@ -4,7 +4,7 @@
 	function conectar()
 	{
 		global $conexion;
-	        $conexion = mysqli_connect('localhost', 'root', '', 'intranet');
+	        $conexion = mysqli_connect('192.168.0.104', 'root', 'carlos123', 'intranet');
 		//$conexion = mysqli_connect('localhost', 'trading', 'a1b2c3d4e5f6', 'trading_intranet');
 		mysqli_set_charset($conexion, 'utf8');
 	}

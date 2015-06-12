@@ -20,30 +20,20 @@
     <?php
     include '../Secciones/CodeNavCat.php';
     ?>
-
-    <div class="container">
-
-      <div class="starter-template">
+      <div class="container-fluid">
+          <div class="row">
+              <?php include '../Secciones/menu-lateralCat.php'; ?>
           
-        <h1>Sección de Compras</h1>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Libro de provedores</h1>
-                
-                                <p></p>
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+               <h1 class="page-header">Panel de Administración</h1>
 
-            </div>
-            <div class="col-md-6">
-                <h1>Incidencias</h1> 
-                <p></p>
-            </div>
-            
+          <h4 class="sub-header">Bienvenido, administrador.</h4>
+          <p>Por favor seleccione una de las opciones del menú lateral izquierdo.</p>
+        
+              
         </div>
+      </div><!-- /.container -->
       </div>
-        <?php include '../Secciones/CodeFooter.php';   ?>   
-    </div><!-- /.container -->
-
- 
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
