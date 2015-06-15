@@ -1,3 +1,4 @@
 <?php
-
-echo 'hola';
+include '../scripts/funciones.php';
+    conectarSQl();
+?>

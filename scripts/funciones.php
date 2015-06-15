@@ -11,14 +11,29 @@
         function conectarSQl()
         {
             global $conexionSQL;
-            $serverName="192.168.0.104";
-            $infoCnn=array("DataBase"=>"ICG", "UID"=>"sa","PWD"=>"Masterkey3033");
-            $conexionSQL = sqlsrv_connect($serverName,$infoCnn);
-            if($conexionSQL){
-                
-            }
+            $host="192.168.0.104" ;
+            $base="ICG"; 
+            $usuario="sa"; 
+            $password="Masterkey3033"; 
+ 
+
+            //Conexión a SQL 
+            $connection_string = "DRIVER={SQL Server};SERVER=$host;DATABASE=$base"; 
             
-        }
+
+            $conexionSQL = odbc_connect($connection_string, $usuario, $password); 
+
+                //Si falla la conexión, se muestra un mensaje de error 
+                if ($conexionSQL){ 
+
+                      echo "Connection established.";
+
+                }else{
+                    echo "sin Conexion";
+                } 
+                odbc_close($conexionSQL);
+                    }
+                    
 
 	function getTodasCategorias()
 	{
