@@ -30,14 +30,13 @@
       <div class="row">
         <?php include './menu-lateral.php'; ?>
           
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main">
           <h1 class="page-header">Panel de Administración</h1>
 
           <h4 class="sub-header">Bienvenido, administrador.</h4>
           <p>Por favor seleccione una de las opciones del menú lateral izquierdo.</p>
         </div>
       </div>
-        
     </div>
 
     <!-- Bootstrap core JavaScript
