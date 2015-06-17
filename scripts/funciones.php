@@ -15,12 +15,8 @@
             $base="ICG"; 
             $usuario="sa"; 
             $password="Masterkey3033"; 
- 
-
             //Conexión a SQL 
             $connection_string = "DRIVER={SQL Server};SERVER=$host;DATABASE=$base"; 
-            
-
             $conexionSQL = odbc_connect($connection_string, $usuario, $password); 
 
                 //Si falla la conexión, se muestra un mensaje de error 
@@ -31,8 +27,41 @@
                 }else{
                     echo "sin Conexion";
                 } 
-                odbc_close($conexionSQL);
-                    }
+           //odbc_close($conexionSQL);
+                $buscar = "SELECT ARTICULOS.DESCRIPCION AS ARTICULO, 
+                DEPARTAMENTO.DESCRIPCION AS DEPARTAMENTO, 
+                SECCIONES.DESCRIPCION AS SECCION,
+                FAMILIAS.DESCRIPCION AS FAMILIA,
+                MARCA.DESCRIPCION AS MARCA,
+                PRECIOSVENTA.PBRUTO AS PRECIO,
+                ARTICULOSLIN.ULTIMOCOSTE AS COSTES,
+                ARTICULOS.UNIDADMEDIDA AS UNIDADM
+                FROM ARTICULOS 
+                LEFT JOIN DEPARTAMENTO on ARTICULOS.DPTO = DEPARTAMENTO.NUMDPTO
+                LEFT JOIN SECCIONES ON ARTICULOS.SECCION = SECCIONES.NUMSECCION
+                LEFT JOIN FAMILIAS ON ARTICULOS.FAMILIA = FAMILIAS.NUMFAMILIA
+                LEFT JOIN MARCA ON ARTICULOS.MARCA = MARCA.CODMARCA
+                LEFT JOIN PRECIOSVENTA ON ARTICULOS.CODARTICULO = PRECIOSVENTA.CODARTICULO
+                LEFT JOIN ARTICULOSLIN ON ARTICULOS.CODARTICULO = ARTICULOSLIN.CODARTICULO
+                WHERE ARTICULOS.DESCATALOGADO='F' AND PRECIOSVENTA.IDTARIFAV='1'"; 
+                
+                $resultado = odbc_exec($conexionSQL, $buscar); 
+
+
+                if (!$resultado) 
+                {
+                    exit("Error en la búsqueda"); 
+                }
+                else{ //Caso contrario, se imprimen los resultados de la consulta 
+                    while (odbc_fetch_row($resultado))
+                    { 
+                        echo odbc_result($resultado, 'ARTICULO')."<br>"; 
+                    } 
+                } 
+
+}          
+                
+        
                     
 
 	function getTodasCategorias()
