@@ -9,16 +9,17 @@
           <p>Informe de incidencias diarias.</p>
           <p><a class="btn btn-default" href="#" role="button">Ir.. &raquo;</a></p>
        </div>
-        <div class="col-md-4">
+       
+    
+    
+    
+    
+    
+    <div class="col-md-4">
           <h2>Comunicados</h2>
           <p>Comunicados de procesos a seguir en la empresa.</p>
           <p><a class="btn btn-default" href="#" role="button">Ir.. &raquo;</a></p>
         </div>
       </div>
 <!--Extraido de index.php pricipal  -->
-dsfdfsfd
-asas
-
-
-
 
